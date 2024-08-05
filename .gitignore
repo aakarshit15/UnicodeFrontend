@@ -1,0 +1,10 @@
+pdfs/
+Task1/node_modules
+Task1/public
+Task1/src
+Task1/.eslintrc.cjs
+Task1/index.html
+Task1/package-lock.json
+Task1/package.json
+Task1/README.md
+Task1/vite.config.js

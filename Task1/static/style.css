@@ -1,0 +1,673 @@
+:root {
+    --primary: #EA6D27;
+    --secondary: #101A24;
+    --header-font-family: "David Libre";
+    --content-font-family: "Inter"
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.circular-ring {
+    position: absolute;
+    width: 20%;
+    height: 100px;
+    border: 1px solid #101A2433;
+    border-top: none;
+    border-left: none;
+    border-bottom-right-radius: 100%;
+}
+
+#ring2 {
+    width: 80%;
+    height: 90%;
+}
+
+#ring1 {
+    width:25%;
+    height: 45vh;
+    min-height: 389px;
+}
+
+.logo-img {
+    width: 50px;
+    height: auto;
+}
+
+.logo-text {
+    font-weight: 900;
+    color: #101A24;
+    font-family: sans-serif;
+    font-size: 1.5rem;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+li {
+    list-style-type: none;
+}
+
+.tab {
+    color: var(--secondary);
+    font-weight: 400;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+.active {
+    font-weight: 700;
+}
+
+.nav-btns {
+    gap: 10px;
+}
+
+.btn {
+    border: none;
+    border-start-start-radius: 15px;
+    border-end-end-radius: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: var(--header-font-family);
+    min-width: 100px
+}
+
+.btn-primary {
+    background-color: var(--primary);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary);
+    opacity: 90%;
+}
+
+.btn-secondary {
+    background-color: var(--secondary);
+}
+
+.btn-secondary:hover {
+    background-color: var(--secondary);
+    opacity: 90%;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.header-content {
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+.header-content > .row {
+    width: 100%;
+    gap: 30px;
+    height: fit-content;
+}
+
+.header-content > .row > .content-text {
+    gap: 2rem
+}
+
+.header-content > .row > .content-text > .text-header {
+    color: var(--secondary);
+    font-family: var(--header-font-family);
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 85px;
+}
+
+.header-content > .row > .content-text > .text-content {
+    color: var(--secondary);
+    font-family: var(--content-font-family);
+    font-size: 1rem;
+    line-height: 29px;
+}
+
+.header-content > .row > .content-img {
+    position: relative;
+    height: min-content;
+}
+
+.header-content > .row > .content-img > #dish1{
+    position: relative;
+    width: 80%;
+    border-start-start-radius: 100px;
+    border-end-end-radius: 100px;
+    border-end-start-radius: 30px;
+    border-start-end-radius: 30px;
+    z-index: 1;
+    display: inline;
+}
+
+.header-content > .row > .content-img > #dish2 {
+    position: absolute;
+    width: 65%;
+    top: 40%;
+    left: -25%;
+    z-index: 2;
+    display: inline;
+}
+
+.header-content > .row > .content-img > #leaf1 {
+    position: absolute;
+    width: 37%;
+    top: 50%;
+    left: 66%;
+    opacity: 50%;
+    display: inline;
+    z-index: -5;
+}
+
+.social-links > * {
+    cursor: pointer;
+}
+
+main {
+    background-color: rgb(16, 26, 36, 0.05);
+    position: relative;
+    height: min-content;
+}
+
+main > img {
+    position: absolute;
+    opacity: 50%;
+}
+
+main > #leaf2 {
+    top: 10%;
+    left: 25%;
+    width: 15%;
+}
+
+.foods > .row > .foods-text {
+    max-width: 400px;
+}
+
+.foods > .row > .foods-text > * {
+    color: var(--secondary);
+}
+
+.foods > .row > .foods-text > .heading {
+    font-family: var(--header-font-family);
+    font-weight: 700;
+}
+
+.foods > .row > .foods-text > .text {
+    font-family: var(--content-font-family);
+    font-weight: 400;
+}
+
+.food-cards {
+    margin-top: 120px;
+    width: 100%
+}
+
+.food-cards > .food-card {
+    position: relative;
+    height: min-content;
+}
+
+.food-cards > .food-card > img {
+    width: 55%;
+    position: absolute;
+    z-index: 5;
+    top: -30%;
+    left: 25%;
+}
+
+.food-card > .food-price {
+    background-color: var(--secondary);
+    color: white;
+    border-radius: 50%;
+    padding: 0.75rem;
+    position: absolute;
+    z-index: 10;
+    top: -23%;
+    left: 63%;
+}
+
+.food-cards > .food-card > .food-box {
+    border: 4px solid white;
+    width: 80%;
+    position: relative;
+    border-start-start-radius: 50px;
+    border-end-end-radius: 50px;
+    border-start-end-radius: 20px;
+    border-end-start-radius: 20px;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+    min-width: 200px;
+    max-width: 300px;
+}
+
+.food-box > * {
+    color: var(--secondary)
+}
+
+.food-box > .box-heading {
+    font-family: var(--header-font-family);
+    margin-top: 3rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.food-box > .box-content {
+    font-family: var(--content-font-family);
+}
+
+.major-food {
+    position: relative;
+}
+
+.major-food > #majorFood {
+    position: relative;
+    width: 100%;
+}
+
+.major-food-img > #greenLeaf1, #greenLeaf2, #greenLeaf3, #greenLeaf4 {
+    position: absolute;
+}
+
+.major-food-img > #greenLeaf1 {
+    top:20%;
+    left: 40%;
+    width: 15%;
+}
+
+.major-food-img > #greenLeaf2 {
+    top: 25%;
+    left: 3%;
+    width: 8%;
+}
+
+.major-food-img > #greenLeaf3 {
+    top: 80%;
+    left: 8%;
+    width: 15%;
+}
+
+.major-food-img > #greenLeaf4 {
+    top: 65%;
+    left: 30%;
+    width: 9%;
+}
+
+.major-food-content {
+    gap:3
+}
+
+.major-food-content > .content-heading {
+    font-family: var(--header-font-family);
+    font-size: 5rem;
+}
+
+.major-food-content > .content-text {
+    font-family: var(--content-font-family);
+    font-size: 25px;
+    line-height: 40px;
+}
+
+.newsletter {
+    background-image: url('./assets/hotelImg.jpeg');
+    background-size: cover;
+    background-position: center;
+    width: 70%;
+    border-radius: 20px;
+    height: 300px;
+}
+
+.newsletter-text {
+    font-family: var(--header-font-family);
+    width: 60%;
+}
+
+.newsletter-form {
+    border-radius: 15px;
+    width: 50%;
+    padding: 10px;
+}
+
+.input-field {
+    font-family: var(--content-font-family);
+}
+
+.input-field:focus {
+    border: none;
+    outline: none;
+}
+
+#submit {
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 1400px) {
+    .food-box > .box-heading {
+        font-size: 20px
+    }
+
+    .food-cards > .food-card > .food-box {
+        padding-top: 3rem;
+    }
+
+    .major-food-img > #majorFood {
+        width: 130%;
+    }
+
+    .major-food-content > .content-heading {
+        line-height: normal;
+        font-size: 4rem;
+    }
+
+    .major-food-content > .content-text {
+        font-size: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 1200px) {
+    #ring1 {
+        width: 30%;
+    }
+
+    .header-content > .row > .content-text > .text-header {
+        font-size: 60px;
+    }
+    
+    .food-cards > .food-card > img {
+        width: 45%;
+        top: -10%;
+        left: 28%;
+    }
+
+    .food-card > .food-price {
+        top: -5%;
+        left: 60%;
+    }
+
+    .food-cards > .food-card {
+        padding: 30px
+    }
+
+    .food-cards > .food-card > .food-box {
+        padding-top: 0.3rem;
+    }
+
+    .major-food-content {
+        gap: 30px;
+    }
+
+    .major-food-content > .content-heading {
+        font-size: 3rem;
+    }
+
+}
+
+@media only screen and (max-width: 992px) {
+    .tabs {
+        display: none;
+    }
+
+    .menu-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #ring1 {
+        width: 35%;
+    }
+
+    .header-content > .row > .content-text > * {
+        text-align: center;
+    }
+
+    .header-content > .row > .content-img > #dish1 {
+        width: 70%;
+    }
+
+    .header-content > .row > .content-img > #dish2 {
+        width: 50%;
+        top: 48%;
+        left: -5%;
+    }
+    
+    .header-content > .row > .content-img > #leaf1 {
+        width: 30%;
+    }
+
+    .food-cards {
+        gap: 3rem;
+    }
+
+    .food-cards > .food-card > .food-box {
+        padding-top: 1rem;
+    }
+
+    .major-food-img {
+        order: 1
+    }
+
+    .major-food-img > #majorFood {
+        width: 90%;
+    }
+
+    .major-food-img > #greenLeaf1 {
+        width: 23%;
+        top: 45%;
+        left: 76%;
+    }
+    
+    .major-food-img > #greenLeaf2 {
+        width: 12%;
+        top: 50%;
+        left: 10%;
+    }
+    
+    .major-food-img > #greenLeaf3 {
+        width: 22%;
+        top: 85%;
+        left: 20%;
+    }
+    
+    .major-food-img > #greenLeaf4 {
+        width: 12%;
+        top: 75%;
+        left: 50%;
+    }
+
+    .major-food-content {
+        align-items: center;
+    }
+
+    .major-food-content > * {
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-device-width: 767px) {
+    #ring1 {
+        width: 60%
+    }
+
+    .header-content > .row > .content-img > #dish1 {
+        width: 60%;
+    }
+
+    .header-content > .row > .content-img > #dish2 {
+        width: 40%;
+        top: 50%;
+        left: 5%;
+    }
+    
+    .header-content > .row > .content-img > #leaf1 {
+        width: 20%;
+        top: 60%;
+    }
+
+    .food-cards {
+        gap: 90px
+    }
+
+    .food-cards > .food-card > img {
+        width: 30%;
+        top: -25%;
+        left: 38%;
+    }
+    
+    .food-cards > .food-card > .food-price {
+        top: -25%;
+        left: 58%;
+    }
+
+    .food-cards > .food-card > .food-box {
+        padding-top: 3vw;
+    }
+
+    .major-food-img > #greenLeaf1 {
+        top: 55%;
+    }
+    
+    .major-food-img > #greenLeaf2 {
+        top: 60%;
+    }
+    
+    .major-food-img > #greenLeaf4 {
+        top: 78%;
+        left: 60%;
+    }
+
+    .major-food-content > .content-text {
+        font-size: 1rem;
+        line-height: 30px;
+    }
+
+}
+
+@media only screen and (max-device-width: 576px) {
+    .food-cards > .food-card > .food-box {
+        width: 516px;
+    }
+}
+
+@media only screen and (max-width: 484px) {
+    .header-content > .row > .content-text > .text-header {
+        font-size: 50px;
+    }
+
+    .food-cards > .food-card > img {
+        width: 40%;
+        left: 30%;
+    }
+
+    .food-cards > .food-card > .food-price {
+        font-size: 0.75rem;
+    }
+
+    .food-cards > .food-card > .food-box {
+        padding-top: 2rem;
+    }
+
+    .major-food-img > #greenLeaf1 {
+        top: 60%;
+    }
+    
+    .major-food-img > #greenLeaf2 {
+        top:65%;
+    }
+    
+    .major-food-img > #greenLeaf4 {
+        top: 82%;
+        left: 57%;
+    }
+}
+
+@media only screen and (max-width: 399px) {
+    .logo-img {
+        width: 23px;
+    }
+
+    .logo-text {
+        font-size: 1rem;
+    }
+
+    .btn {
+        width: 70px;
+        height: 20px;
+        font-size: 10px;
+    }
+
+    .header-content > .row > .content-text > .text-header {
+        font-size: 40px;
+        line-height: 60px;
+    }
+
+    .food-cards > .food-card > .food-price {
+        font-size: 0.6rem;
+    }
+
+    .food-cards > .food-card > .food-box > .box-heading {
+        margin-top: 1rem
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    .food-cards > .food-card > img {
+        top: -15%;
+        left: 30%;
+    }
+    
+    .food-cards > .food-card > .food-price {
+        top: -10%;
+        left: 60%;
+    }
+
+    .major-food-img > #greenLeaf1 {
+        top: 67%;
+    }
+    
+    .major-food-img > #greenLeaf2 {
+        top: 70%;
+    }
+    
+    .major-food-img > #greenLeaf4 {
+        top: 85%;
+    }
+
+    .major-food-content > .content-text {
+        font-size: 0.9rem;
+        line-height: 22px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .major-food-img > #greenLeaf1 {
+        top: 72%;
+    }
+    
+    .major-food-img > #greenLeaf2 {
+        top: 75%;
+    }
+    
+}
+
+
+@media only screen and (max-width: 259px) {
+    .header-content > .row > .content-text > .text-header {
+        font-size: 30px;
+        line-height: 45px;
+    }
+
+    .food-cards > .food-card > .food-box > .box-heading {
+        margin-top: 0.5rem
+    }
+
+}
